@@ -1,0 +1,93 @@
+{
+  "RootKey": "xprv9s21ZrQH143K3nyxrzRjhpwmjQ1gGyHTYRnLa9tgtsNVb7gMsGgVMgGDq4FYP9wKyuE7UcNjm1WcmhxA1ZJxnvey9nDnNJ3miCZYRYfaZJd",
+  "Seed": "7c120ebeb0a66e83c560c28082e64c96dfac75c68d8381aa74488d2d46a93d6ff227655a9cd64d10482a3b94583d307cbad632a4a80f9e266300e85041dc19d4",
+  "Mnemonic": "tray leopard rocket because metal choice frog modify evolve layer affair silly melody armed weasel glad corn man valid solve normal force orphan sadness",
+  "DerivationPath": "m/44'/60'/0'",
+  "AccountPublicKey": "xpub6CfKBfh58NnkmXWjEAE5cXFSsfGfK182HKC5HBbu2HbTRiQTvbfnbU1nogTgkdqSZzwckTc1uexhwtvYNxpUchttjhAFH7BTD78NTs825GU",
+  "AccountPrivateKey": "xprv9yfxnAABJ1ETZ3SG88h5FPJiKdSAuYQAv6GUUoCHTx4UYv5KP4MY3fhJxSNzUK96eDkgUSaicd1Y8wsSHoXhtv9ERYmihgHN34J6WwE4Eob",
+  "BIP32PublicKey": "xpub6DmEezVvkA4zjFg2SbMTLev8yXVHzyx2aBXGbVhkGY1osewZEvU9Pg8GET3UzFSHDGhx8MNkuzfPiUyCxHUHSzvYSoACFfr8gLs7XgRqZfd",
+  "BIP32PrivateKey": "xprv9zmtFUy2unWhWmbZLZpSyWyQRVeobXEBCxbfo7J8iCUpzrcQhP9tqsonP9vBgJUZUJH2tAuzy5sdpz6yMSVxet5wRRCASdtcn6qGYHF1SCc",
+  "Addresses": [
+   {
+    "Path": "m/44'/60'/0'/0/0",
+    "HexPublicKey": "0227f9dc9a615488388cf1bd626c2fcfa83434e7b8b7cc29a4f6625e17b1c12fa1",
+    "HexFullPublicKey": "27f9dc9a615488388cf1bd626c2fcfa83434e7b8b7cc29a4f6625e17b1c12fa11e0fae3571f4a84f7ba82146a0b6c9c9aae09b8e24b39ee73f96e5b48bd6ab02",
+    "HexPrivateKey": "12539dddc7c45beac82b138d577190777034d05b6d10b030c1f28a0d7d51f104",
+    "ETHAddress": "0x40A866C2c94B015e03D343FeAF8f143827c7cED0",
+    "BTCAddress": "12n8UnmCeGN7mSAX5wj4vCv2afLamBoUP8",
+    "WIF": "KwqLQi5NmUTLjvEZQfnq4ABMkoS9eFWM4kfpY2SzADoj59jyBJgc"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/1",
+    "HexPublicKey": "03a073aedfec908008ab344edbcaed2e471e7d4669dbc6786c489012b12087f56b",
+    "HexFullPublicKey": "a073aedfec908008ab344edbcaed2e471e7d4669dbc6786c489012b12087f56b5abbc709ddd890866688cfdb13e53aee6d98b9499718bdf69573b1ea196e2719",
+    "HexPrivateKey": "10482a08713b171f38271ce9d6ef64de29e9f776c8e4fc723a7fe312c5966bec",
+    "ETHAddress": "0x1c67582cd84Ca1eE511A6684237Ab7c17D52442a",
+    "BTCAddress": "1A38DVi2rj2XrLh1ocAa8DKLGkLgomRycC",
+    "WIF": "KwmMspQPBPfAE7zMxVcM8xapLox17dawwEPYmhXhWLoqYuAkyhL9"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/2",
+    "HexPublicKey": "034a50a9e33d5412a08a0a7b68192513ccfabd92a34c119b513c0c911dd65f2f5b",
+    "HexFullPublicKey": "4a50a9e33d5412a08a0a7b68192513ccfabd92a34c119b513c0c911dd65f2f5b767874e76f7d661476134435231e2232d5e2885153378c72c8ac88d4210496db",
+    "HexPrivateKey": "0d2d8715f37285ec1a95cf5d2c8f8734dbc1f54cf2ba48cc03aae00902f858bc",
+    "ETHAddress": "0xc5544316d0C8ff6913B4a910A8C3803d26983794",
+    "BTCAddress": "1G9rGHDLwypmguW6d9aCmpPJaDccsyNi2",
+    "WIF": "KwfKutrjnRzuM7zVKbyxYu7ZwagA2CBLeVFzCVvxHyuJmmyZER6U"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/3",
+    "HexPublicKey": "029e9fab0d3c00cb51596ab4153e2cb59080e41446eb5a82cc11929d14c65e9c5a",
+    "HexFullPublicKey": "9e9fab0d3c00cb51596ab4153e2cb59080e41446eb5a82cc11929d14c65e9c5afc821dbae8db8e6050c6585459c4e8a3f8fa422f79ca025532b7ad4ca64c4e76",
+    "HexPrivateKey": "4c14b29970674da0669f51e25fcd39c8c28c66522d30dc2ccc92cac2b0dd568e",
+    "ETHAddress": "0x091D7c5FC7919c389B056A9a04dFAB3C46fEeba1",
+    "BTCAddress": "1NzwKCELp8bAMFVStGUwTBqRE29brGCDx7",
+    "WIF": "KymbskzA19iuZfGy8iRMLrtAQM8DuWnfnub7ybmvqoGD3oSA1ip4"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/4",
+    "HexPublicKey": "0200eae90561b2428127c5065b2fe3d109a93a48bfdcb47a90a3bc4e78e231660f",
+    "HexFullPublicKey": "eae90561b2428127c5065b2fe3d109a93a48bfdcb47a90a3bc4e78e231660fcc55e75d7c8af3e6b1edfcfefbdb9fe7fe7d4dd1df432932b5d640f0ef935ec0",
+    "HexPrivateKey": "d124b9664ac2ef378afd35564ce91ef952bdf973dde84381d781be3682d737e8",
+    "ETHAddress": "0xa155CaEe6F2356C3725E935B61Df750E63005ECC",
+    "BTCAddress": "13bHAUxAdzbpGQZ7bxYpE74fY19WFfssfV",
+    "WIF": "L4EFwbhFBrB7wPdV2ohdmrKucLyyzTEM8hxeM2z8gXHkg4ukLQMT"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/5",
+    "HexPublicKey": "0375fa6ffcaac5a59dc435f6f12758ed025231a4a3b9e2410ed838526c7349b8ed",
+    "HexFullPublicKey": "75fa6ffcaac5a59dc435f6f12758ed025231a4a3b9e2410ed838526c7349b8ed810e22ee0a5cc9b8ae335553ab701109154179d370bcf157d4315b68da165ebd",
+    "HexPrivateKey": "cb079c7207fae1850cc85f88a790717a790385a1f9180eb2b981221b221b213d",
+    "ETHAddress": "0x888a10cE6530bf824d23b4b4241C1E3d6b0fe0C7",
+    "BTCAddress": "1497fxTn7WEYyRvzNHURJywAV7eQFbesZE",
+    "WIF": "L42NetJjFNVdMAFnXVX9sLFbNYNi6JdFZSt5NusQaEPa2qGfB6Cx"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/6",
+    "HexPublicKey": "03c54c621ec0fdabd8b37794d7f4f7b6da3d5d3ed785b4fe13374c8ef13985eaca",
+    "HexFullPublicKey": "c54c621ec0fdabd8b37794d7f4f7b6da3d5d3ed785b4fe13374c8ef13985eaca0e62f2d66007985290828285c2583f38228c20e6593dbab0ae8e26350147e005",
+    "HexPrivateKey": "c4f1776a3889a9b1881a43ac366049ac3a6f8f00e4bcd4c110febdf429ac501f",
+    "ETHAddress": "0x3AdAC8d386E49b25341659923700a8bAC3Aa120C",
+    "BTCAddress": "1BWGtAtRxUmJGzq9LH911R1CAgKR1vJNfq",
+    "WIF": "L3pYSAuMkVSdLNJwAE3rRFpKbXQvXoeMDQcxUqfgdWP3biA1qAVS"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/7",
+    "HexPublicKey": "02c66931699e2a657c404b4cde246860073477bab6469631dc3b00e5c50e0cb196",
+    "HexFullPublicKey": "c66931699e2a657c404b4cde246860073477bab6469631dc3b00e5c50e0cb1962b2990344e1f85f924ae243e3ac9e35efa2321c9810b395148c29017ae6ec954",
+    "HexPrivateKey": "93cd9fe869bf61f205e928df97c2e37f6c12a4d845efb6315e77aa49e04b4990",
+    "ETHAddress": "0x874F0cC953Ba051FfD92A997F2924c0d485B4787",
+    "BTCAddress": "14Msu21J1B1ALC6Vn2KC3aZuWZgRFFsiBL",
+    "WIF": "L2B2Azj4z6Db6G6jwi2xhgDwJUdLsdBsdG9hojrVU86m3MbjP6zD"
+   },
+   {
+    "Path": "m/44'/60'/0'/0/8",
+    "HexPublicKey": "02fdac1c73fad3227edf67e1b93ab87dde91c0815947503aa49f2cad4bacd59640",
+    "HexFullPublicKey": "fdac1c73fad3227edf67e1b93ab87dde91c0815947503aa49f2cad4bacd59640bc5180d9c1525bfb2a54b7bfc995a8cecfcdf2dddd0b88adf6d193d46ff196ac",
+    "HexPrivateKey": "6eb5ca02620e81778ec187546647ea633b586aa467dad1fedf646f851c80234f",
+    "ETHAddress": "0x78fBd19bACdC4a7C52fe46A2f5f467840b17B7E9",
+    "BTCAddress": "1MuzLaadmq5ZunEAE4o9jzPFJzZazDrLXD",
+    "WIF": "Kzvv8d2TVWAPLMcjB2uiHmT24TdnPSfT9r3RYvtYZb39VVj9iRTC"
+   }
+  ]
+ }

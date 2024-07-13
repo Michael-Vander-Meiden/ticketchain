@@ -129,8 +129,8 @@ def create_reverse_proxy_config_artifact(plan, args):
     bridge_ui_proxy_config_template = read_file(
         src="./templates/bridge-infra/haproxy.cfg"
     )
-
-    l1rpc_service = plan.get_service("el-1-geth-lighthouse")
+    #customized
+    #l1rpc_service = plan.get_service("el-1-geth-lighthouse")
     l2rpc_service = plan.get_service(
         name=args["l2_rpc_name"] + args["deployment_suffix"]
     )
@@ -147,8 +147,8 @@ def create_reverse_proxy_config_artifact(plan, args):
             "haproxy.cfg": struct(
                 template=bridge_ui_proxy_config_template,
                 data={
-                    "l1rpc_ip": l1rpc_service.ip_address,
-                    "l1rpc_port": l1rpc_service.ports["rpc"].number,
+                    #"l1rpc_ip": l1rpc_service.ip_address,
+                    #"l1rpc_port": l1rpc_service.ports["rpc"].number,
                     "l2rpc_ip": l2rpc_service.ip_address,
                     "l2rpc_port": l2rpc_service.ports["http-rpc"].number,
                     "bridgeservice_ip": bridge_service.ip_address,
