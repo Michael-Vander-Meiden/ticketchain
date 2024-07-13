@@ -1,0 +1,46 @@
+[FullNodeRPCs]
+# TODO switch this to permissionless
+1 = "http://{{.l2_rpc_name}}{{.deployment_suffix}}:{{.zkevm_rpc_http_port}}"
+
+[ProofSigners]
+# 1 = "{{.zkevm_l2_proofsigner_address}}"
+
+[RPC]
+Host = "0.0.0.0"
+Port = {{.zkevm_agglayer_port}}
+ReadTimeout = "60s"
+WriteTimeout = "60s"
+MaxRequestsPerIPAndSecond = 5000
+
+[Log]
+Environment = "production" # "production" or "development"
+Level = "info"
+Outputs = ["stderr"]
+
+[DB]
+User = "{{.agglayer_db.user}}"
+Password = "{{.agglayer_db.password}}"
+Name = "{{.agglayer_db.name}}"
+Host = "{{.agglayer_db.hostname}}"
+Port = "{{.agglayer_db.port}}"
+EnableLog = false
+MaxConns = 200
+
+[EthTxManager]
+FrequencyToMonitorTxs = "1s"
+WaitTxToBeMined = "2m"
+ForcedGas = 0
+GasPriceMarginFactor = 1
+MaxGasPriceLimit = 0
+PrivateKeys = [
+	{Path = "/etc/zkevm/agglayer.keystore", Password = "{{.zkevm_l2_keystore_password}}"},
+]
+KMSKeyName = "" # Disable for local
+
+[L1]
+ChainID = {{.l1_chain_id}}
+NodeURL = "{{.l1_rpc_url}}"
+RollupManagerContract = "{{.zkevm_rollup_manager_address}}"
+
+[Telemetry]
+PrometheusAddr = "0.0.0.0:{{.zkevm_prometheus_port}}"
