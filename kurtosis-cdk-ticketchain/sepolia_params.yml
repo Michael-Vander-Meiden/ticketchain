@@ -3,7 +3,7 @@
 # The deployment process is divided into various stages.
 
 # Deploy local L1.
-deploy_l1: true
+deploy_l1: false
 
 # Deploy zkevm contracts on L1 (and also fund accounts).
 deploy_zkevm_contracts_on_l1: true
@@ -87,42 +87,47 @@ args:
   # Addresses and private keys of the different components.
   # They have been generated using the following command:
   # polycli wallet inspect --mnemonic 'lab code glass agree maid neutral vessel horror deny frequent favorite soft gate galaxy proof vintage once figure diary virtual scissors marble shrug drop' --addresses 9 | tee keys.txt | jq -r '.Addresses[] | [.ETHAddress, .HexPrivateKey] | @tsv' | awk 'BEGIN{split("sequencer,aggregator,claimtxmanager,timelock,admin,loadtest,agglayer,dac,proofsigner",roles,",")} {print "zkevm_l2_" roles[NR] "_address: \"" $1 "\""; print "zkevm_l2_" roles[NR] "_private_key: \"0x" $2 "\"\n"}'
-  zkevm_l2_sequencer_address: "0x5b06837A43bdC3dD9F114558DAf4B26ed49842Ed"
-  zkevm_l2_sequencer_private_key: "0x183c492d0ba156041a7f31a1b188958a7a22eebadca741a7fe64436092dc3181"
+  # My custom mnemonic: tray leopard rocket because metal choice frog modify evolve layer affair silly melody armed weasel glad corn man valid solve normal force orphan sadness
+  zkevm_l2_sequencer_address: "0x40A866C2c94B015e03D343FeAF8f143827c7cED0"
+  zkevm_l2_sequencer_private_key: "0x12539dddc7c45beac82b138d577190777034d05b6d10b030c1f28a0d7d51f104"
 
-  zkevm_l2_aggregator_address: "0xCae5b68Ff783594bDe1b93cdE627c741722c4D4d"
-  zkevm_l2_aggregator_private_key: "0x2857ca0e7748448f3a50469f7ffe55cde7299d5696aedd72cfe18a06fb856970"
+  zkevm_l2_aggregator_address: "0x1c67582cd84Ca1eE511A6684237Ab7c17D52442a"
+  zkevm_l2_aggregator_private_key: "0x10482a08713b171f38271ce9d6ef64de29e9f776c8e4fc723a7fe312c5966bec"
 
-  zkevm_l2_claimtxmanager_address: "0x5f5dB0D4D58310F53713eF4Df80ba6717868A9f8"
-  zkevm_l2_claimtxmanager_private_key: "0x8d5c9ecd4ba2a195db3777c8412f8e3370ae9adffac222a54a84e116c7f8b934"
+  zkevm_l2_claimtxmanager_address: "0xc5544316d0C8ff6913B4a910A8C3803d26983794"
+  zkevm_l2_claimtxmanager_private_key: "0x0d2d8715f37285ec1a95cf5d2c8f8734dbc1f54cf2ba48cc03aae00902f858bc"
 
-  zkevm_l2_timelock_address: "0x130aA39Aa80407BD251c3d274d161ca302c52B7A"
-  zkevm_l2_timelock_private_key: "0x80051baf5a0a749296b9dcdb4a38a264d2eea6d43edcf012d20b5560708cf45f"
+  zkevm_l2_timelock_address: "0x091D7c5FC7919c389B056A9a04dFAB3C46fEeba1"
+  zkevm_l2_timelock_private_key: "0x4c14b29970674da0669f51e25fcd39c8c28c66522d30dc2ccc92cac2b0dd568e"
 
-  zkevm_l2_admin_address: "0xE34aaF64b29273B7D567FCFc40544c014EEe9970"
-  zkevm_l2_admin_private_key: "0x12d7de8621a77640c9241b2595ba78ce443d05e94090365ab3bb5e19df82c625"
+  zkevm_l2_admin_address: "0xa155CaEe6F2356C3725E935B61Df750E63005ECC"
+  zkevm_l2_admin_private_key: "0xd124b9664ac2ef378afd35564ce91ef952bdf973dde84381d781be3682d737e8"
 
-  zkevm_l2_loadtest_address: "0x81457240ff5b49CaF176885ED07e3E7BFbE9Fb81"
-  zkevm_l2_loadtest_private_key: "0xd7df6d64c569ffdfe7c56e6b34e7a2bdc7b7583db74512a9ffe26fe07faaa5de"
+  zkevm_l2_loadtest_address: "0x888a10cE6530bf824d23b4b4241C1E3d6b0fe0C7"
+  zkevm_l2_loadtest_private_key: "0xcb079c7207fae1850cc85f88a790717a790385a1f9180eb2b981221b221b213d"
 
-  zkevm_l2_agglayer_address: "0x351e560852ee001d5D19b5912a269F849f59479a"
-  zkevm_l2_agglayer_private_key: "0x1d45f90c0a9814d8b8af968fa0677dab2a8ff0266f33b136e560fe420858a419"
+  zkevm_l2_agglayer_address: "0x3AdAC8d386E49b25341659923700a8bAC3Aa120C"
+  zkevm_l2_agglayer_private_key: "0xc4f1776a3889a9b1881a43ac366049ac3a6f8f00e4bcd4c110febdf429ac501f"
 
-  zkevm_l2_dac_address: "0x5951F5b2604c9B42E478d5e2B2437F44073eF9A6"
-  zkevm_l2_dac_private_key: "0x85d836ee6ea6f48bae27b31535e6fc2eefe056f2276b9353aafb294277d8159b"
+  zkevm_l2_dac_address: "0x874F0cC953Ba051FfD92A997F2924c0d485B4787"
+  zkevm_l2_dac_private_key: "0x93cd9fe869bf61f205e928df97c2e37f6c12a4d845efb6315e77aa49e04b4990"
 
-  zkevm_l2_proofsigner_address: "0x7569cc70950726784c8D3bB256F48e43259Cb445"
-  zkevm_l2_proofsigner_private_key: "0x77254a70a02223acebf84b6ed8afddff9d3203e31ad219b2bf900f4780cf9b51"
-
+  zkevm_l2_proofsigner_address: "0x78fBd19bACdC4a7C52fe46A2f5f467840b17B7E9"
+  zkevm_l2_proofsigner_private_key: "0x6eb5ca02620e81778ec187546647ea633b586aa467dad1fedf646f851c80234f"
   # Keystore password.
   zkevm_l2_keystore_password: pSnv6Dh5s9ahuzGzH9RoCDrKAMddaX3m
 
   ## L1 configuration.
-  l1_chain_id: 271828
-  l1_preallocated_mnemonic: code code code code code code code code code code code quality
-  l1_funding_amount: 100ether
-  l1_rpc_url: http://el-1-geth-lighthouse:8545
-  l1_ws_url: ws://el-1-geth-lighthouse:8546
+  l1_chain_id: 11155111
+  #l1_preallocated_mnemonic: code code code code code code code code code code code quality
+  
+  #adding my personal dev address with sepolia ETH
+  l1_preallocated_mnemonic: better else emerge guitar fog swim salon gap album skin rapid great
+  #zkEVMDeployerAddress: "0xa30149a4FE6349c41E7d7271e0fC4104aB74c8FF"
+
+  l1_funding_amount: 0.2ether
+  l1_rpc_url: https://sepolia.infura.io/v3/218acb9a628140e2837873928ddac606
+  l1_ws_url: wss://sepolia.infura.io/ws/v3/218acb9a628140e2837873928ddac606
   # https://github.com/ethpandaops/ethereum-package/tree/main?tab=readme-ov-file#configuration
   l1_additional_services: [
     # blockscout, # block explorer
@@ -155,7 +160,7 @@ args:
 
   # If this is true, we will automatically deploy an ERC20 contract on
   # L1 to be used at the gasTokenAddress
-  zkevm_use_gas_token_contract: true
+  zkevm_use_gas_token_contract: false
 
   ## Permissionless node configuration.
   trusted_sequencer_node_uri: zkevm-node-sequencer-001:6900
